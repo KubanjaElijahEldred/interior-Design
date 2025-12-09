@@ -405,6 +405,32 @@ h1, h2, h3, h4, h5, h6, p, span, div, a, li, button, input, textarea, label {
     transform: translateY(-2px);
 }
 
+/* Service images */
+.service-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: var(--radius-lg);
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.service-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    filter: brightness(1.1) contrast(1.05) saturate(1.1);
+    transition: all var(--transition-base);
+}
+
+.service-image:hover .service-img {
+    transform: scale(1.05);
+    filter: brightness(1.15) contrast(1.1) saturate(1.2);
+}
+
 /* Service icons with vibrant colors */
 .service-icon {
     width: 3rem;

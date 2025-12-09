@@ -9,16 +9,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Animated Background Particles -->
+    <div class="particles" id="particles"></div>
+    
+    <!-- Progress Indicator -->
+    <div class="progress-indicator">
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+        <div class="progress-dots">
+            <a href="#home" class="progress-dot active" data-section="home"></a>
+            <a href="#about" class="progress-dot" data-section="about"></a>
+            <a href="#services" class="progress-dot" data-section="services"></a>
+            <a href="#trust" class="progress-dot" data-section="trust"></a>
+            <a href="#portfolio" class="progress-dot" data-section="portfolio"></a>
+            <a href="#contact" class="progress-dot" data-section="contact"></a>
+        </div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <div class="logo-container">
-                    <div class="house house-blue"></div>
-                    <div class="house house-green"></div>
-                    <div class="house house-red"></div>
-                    <div class="paint-roller"></div>
-                </div>
+                <img src="logo.jpg" alt="Classy HOMES Uganda Logo" class="logo-img">
                 <span class="logo-text">Classy HOMES</span>
             </div>
             <ul class="nav-menu">
@@ -61,6 +74,7 @@
                 </div>
             </div>
             <div class="hero-image">
+                <img src="Gemini_Generated_Image_2ru2lv2ru2lv2ru2.png" alt="Classy HOMES Interior Design" class="hero-main-image">
                 <div class="floating-houses">
                     <div class="floating-house house-1"></div>
                     <div class="floating-house house-2"></div>
@@ -122,47 +136,124 @@
                 <p class="section-subtitle animate-on-scroll">Comprehensive interior and building design solutions</p>
             </div>
             <div class="services-grid">
-                <div class="service-card animate-on-scroll">
-                    <div class="service-icon">
-                        <i class="fas fa-couch"></i>
+                <div class="card animate-on-scroll">
+                    <div class="card-body">
+                        <div class="service-icon">
+                            <i class="fas fa-couch"></i>
+                        </div>
+                        <h3>Interior Design</h3>
+                        <p>Complete interior design services including space planning, color consultation, furniture selection, and decorative elements to create beautiful and functional living spaces.</p>
                     </div>
-                    <h3>Interior Design</h3>
-                    <p>Complete interior design services including space planning, color consultation, furniture selection, and decorative elements to create beautiful and functional living spaces.</p>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">Learn More</button>
+                    </div>
                 </div>
-                <div class="service-card animate-on-scroll">
-                    <div class="service-icon">
-                        <i class="fas fa-drafting-compass"></i>
+                <div class="card animate-on-scroll">
+                    <div class="card-body">
+                        <div class="service-icon">
+                            <i class="fas fa-drafting-compass"></i>
+                        </div>
+                        <h3>Building Design</h3>
+                        <p>Custom architectural designs and building plans that combine innovative concepts with practical functionality, tailored to your specific needs and location requirements.</p>
                     </div>
-                    <h3>Building Design</h3>
-                    <p>Custom architectural designs and building plans that combine innovative concepts with practical functionality, tailored to your specific needs and location requirements.</p>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">Learn More</button>
+                    </div>
                 </div>
-                <div class="service-card animate-on-scroll">
-                    <div class="service-icon">
-                        <i class="fas fa-cube"></i>
+                <div class="card animate-on-scroll">
+                    <div class="card-body">
+                        <div class="service-icon">
+                            <i class="fas fa-cube"></i>
+                        </div>
+                        <h3>3D Visualization</h3>
+                        <p>Advanced 3D rendering and visualization services to help you see your design concepts before construction begins, ensuring complete satisfaction with the final result.</p>
                     </div>
-                    <h3>3D Visualization</h3>
-                    <p>Advanced 3D rendering and visualization services to help you see your design concepts before construction begins, ensuring complete satisfaction with the final result.</p>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">Learn More</button>
+                    </div>
                 </div>
-                <div class="service-card animate-on-scroll">
-                    <div class="service-icon">
-                        <i class="fas fa-palette"></i>
+                <div class="card animate-on-scroll">
+                    <div class="card-body">
+                        <div class="service-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Space Planning</h3>
+                        <p>Strategic space planning and layout optimization to maximize functionality and flow in both residential and commercial environments.</p>
                     </div>
-                    <h3>Space Planning</h3>
-                    <p>Strategic space planning and layout optimization to maximize functionality and flow in both residential and commercial environments.</p>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">Learn More</button>
+                    </div>
                 </div>
-                <div class="service-card animate-on-scroll">
-                    <div class="service-icon">
-                        <i class="fas fa-ruler-combined"></i>
+                <div class="card animate-on-scroll">
+                    <div class="card-body">
+                        <div class="service-icon">
+                            <i class="fas fa-ruler-combined"></i>
+                        </div>
+                        <h3>Custom Furniture</h3>
+                        <p>Design and fabrication of custom furniture pieces that perfectly complement your interior design and optimize your available space.</p>
                     </div>
-                    <h3>Custom Furniture</h3>
-                    <p>Design and fabrication of custom furniture pieces that perfectly complement your interior design and optimize your available space.</p>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">Learn More</button>
+                    </div>
                 </div>
-                <div class="service-card animate-on-scroll">
-                    <div class="service-icon">
-                        <i class="fas fa-project-diagram"></i>
+                <div class="card animate-on-scroll">
+                    <div class="card-body">
+                        <div class="service-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <h3>Project Management</h3>
+                        <p>Complete project management services from concept to completion, ensuring your interior design or building project is delivered on time and within budget.</p>
                     </div>
-                    <h3>Project Management</h3>
-                    <p>Complete project management services from concept to completion, ensuring your interior design or building project is delivered on time and within budget.</p>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Indicators Section -->
+    <section id="trust" class="trust">
+        <div class="container">
+            <div class="trust-content">
+                <div class="trust-stats">
+                    <div class="trust-stat">
+                        <div class="trust-number">1000+</div>
+                        <div class="trust-label">Happy Clients</div>
+                    </div>
+                    <div class="trust-stat">
+                        <div class="trust-number">15+</div>
+                        <div class="trust-label">Years Experience</div>
+                    </div>
+                    <div class="trust-stat">
+                        <div class="trust-number">500+</div>
+                        <div class="trust-label">Projects Completed</div>
+                    </div>
+                    <div class="trust-stat">
+                        <div class="trust-number">50+</div>
+                        <div class="trust-label">Design Awards</div>
+                    </div>
+                </div>
+                <div class="partners">
+                    <h3>Trusted by Leading Organizations</h3>
+                    <div class="partner-logos">
+                        <div class="partner-logo">
+                            <i class="fas fa-university"></i>
+                            <span>Makerere University</span>
+                        </div>
+                        <div class="partner-logo">
+                            <i class="fas fa-building"></i>
+                            <span>Uganda Architects Association</span>
+                        </div>
+                        <div class="partner-logo">
+                            <i class="fas fa-award"></i>
+                            <span>Interior Design Council</span>
+                        </div>
+                        <div class="partner-logo">
+                            <i class="fas fa-certificate"></i>
+                            <span>Green Building Council</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -182,75 +273,123 @@
                 <button class="filter-btn" data-filter="commercial">Commercial</button>
             </div>
             <div class="portfolio-grid">
-                <div class="portfolio-item animate-on-scroll" data-category="interior">
+                <div class="card animate-on-scroll" data-category="interior">
                     <div class="portfolio-image">
                         <img src="int1.jpeg" alt="Modern Living Room Design" class="portfolio-img">
-                        <div class="portfolio-overlay">
+                    </div>
+                    <div class="card-body">
+                        <div class="portfolio-header">
                             <h4>Modern Living Room</h4>
-                            <p>Contemporary interior design with elegant furniture and lighting</p>
-                            <button class="view-project">View Project</button>
+                            <div class="portfolio-meta">
+                                <span class="meta-item"><i class="fas fa-clock"></i> 4 weeks</span>
+                                <span class="meta-item"><i class="fas fa-star"></i> 4.9</span>
+                                <span class="meta-item"><i class="fas fa-ruler"></i> 250m²</span>
+                            </div>
                         </div>
+                        <p>Contemporary interior design with elegant furniture and lighting</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">View Project</button>
                     </div>
                 </div>
-                <div class="portfolio-item animate-on-scroll" data-category="building">
+                <div class="card animate-on-scroll" data-category="building">
                     <div class="portfolio-image">
                         <img src="int2.jpeg" alt="Building Architecture Design" class="portfolio-img">
-                        <div class="portfolio-overlay">
+                    </div>
+                    <div class="card-body">
+                        <div class="portfolio-header">
                             <h4>Contemporary Building Design</h4>
-                            <p>Innovative architectural design with modern aesthetics</p>
-                            <button class="view-project">View Project</button>
+                            <div class="portfolio-meta">
+                                <span class="meta-item"><i class="fas fa-clock"></i> 12 weeks</span>
+                                <span class="meta-item"><i class="fas fa-star"></i> 4.8</span>
+                                <span class="meta-item"><i class="fas fa-building"></i> 3 floors</span>
+                            </div>
                         </div>
+                        <p>Innovative architectural design with modern aesthetics</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">View Project</button>
                     </div>
                 </div>
-                <div class="portfolio-item animate-on-scroll" data-category="renovation">
+                <div class="card animate-on-scroll" data-category="interior">
+                    <div class="portfolio-image">
+                        <img src="int3.jpeg" alt="Bedroom Interior Design" class="portfolio-img">
+                    </div>
+                    <div class="card-body">
+                        <div class="portfolio-header">
+                            <h4>Luxury Bedroom Interior</h4>
+                            <div class="portfolio-meta">
+                                <span class="meta-item"><i class="fas fa-clock"></i> 3 weeks</span>
+                                <span class="meta-item"><i class="fas fa-star"></i> 5.0</span>
+                                <span class="meta-item"><i class="fas fa-bed"></i> Master Suite</span>
+                            </div>
+                        </div>
+                        <p>Sophisticated bedroom design with premium materials</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">View Project</button>
+                    </div>
+                </div>
+                <div class="card animate-on-scroll" data-category="commercial">
+                    <div class="portfolio-image">
+                        <img src="int4.jpeg" alt="Commercial Interior Design" class="portfolio-img">
+                    </div>
+                    <div class="card-body">
+                        <div class="portfolio-header">
+                            <h4>Commercial Office Space</h4>
+                            <div class="portfolio-meta">
+                                <span class="meta-item"><i class="fas fa-clock"></i> 6 weeks</span>
+                                <span class="meta-item"><i class="fas fa-star"></i> 4.7</span>
+                                <span class="meta-item"><i class="fas fa-users"></i> 50 seats</span>
+                            </div>
+                        </div>
+                        <p>Professional interior design for modern work environments</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">View Project</button>
+                    </div>
+                </div>
+                <div class="card animate-on-scroll" data-category="interior">
+                    <div class="portfolio-image">
+                        <img src="int5.jpeg" alt="Kitchen Interior Design" class="portfolio-img">
+                    </div>
+                    <div class="card-body">
+                        <div class="portfolio-header">
+                            <h4>Modern Kitchen Design</h4>
+                            <div class="portfolio-meta">
+                                <span class="meta-item"><i class="fas fa-clock"></i> 5 weeks</span>
+                                <span class="meta-item"><i class="fas fa-star"></i> 4.9</span>
+                                <span class="meta-item"><i class="fas fa-utensils"></i> Custom</span>
+                            </div>
+                        </div>
+                        <p>Functional and stylish kitchen interior with custom cabinetry</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">View Project</button>
+                    </div>
+                </div>
+                <div class="card animate-on-scroll" data-category="building">
                     <div class="portfolio-image">
                         <div class="image-placeholder">
                             <i class="fas fa-home"></i>
                         </div>
-                        <div class="portfolio-overlay">
-                            <h4>Villa Renovation</h4>
-                            <p>Jinja Road</p>
-                            <button class="view-project">View Project</button>
+                    </div>
+                    <div class="card-body">
+                        <div class="portfolio-header">
+                            <h4>Eco-Friendly Building</h4>
+                            <div class="portfolio-meta">
+                                <span class="meta-item"><i class="fas fa-leaf"></i> Sustainable</span>
+                                <span class="meta-item"><i class="fas fa-star"></i> 4.8</span>
+                                <span class="meta-item"><i class="fas fa-home"></i> Modern</span>
+                            </div>
                         </div>
+                        <p>Sustainable building design with green materials</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">View Project</button>
                     </div>
                 </div>
-                <div class="portfolio-item animate-on-scroll" data-category="residential">
-                    <div class="portfolio-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-home"></i>
-                        </div>
-                        <div class="portfolio-overlay">
-                            <h4>Luxury Apartment</h4>
-                            <p>Kololo</p>
-                            <button class="view-project">View Project</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item animate-on-scroll" data-category="commercial">
-                    <div class="portfolio-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-building"></i>
-                        </div>
-                        <div class="portfolio-overlay">
-                            <h4>Retail Center</h4>
-                            <p>Ntinda</p>
-                            <button class="view-project">View Project</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item animate-on-scroll" data-category="residential">
-                    <div class="portfolio-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-home"></i>
-                        </div>
-                        <div class="portfolio-overlay">
-                            <h4>Eco-Friendly Home</h4>
-                            <p>Buziga</p>
-                            <button class="view-project">View Project</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item animate-on-scroll" data-category="commercial">
+            </div>    <div class="portfolio-item animate-on-scroll" data-category="commercial">
                     <div class="portfolio-image">
                         <div class="image-placeholder">
                             <i class="fas fa-building"></i>
@@ -290,7 +429,7 @@
                         </div>
                         <div class="contact-details">
                             <h4>Phone</h4>
-                            <p>+256 123 456 789</p>
+                            <p>+256 709320213</p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -329,14 +468,9 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <div class="logo-container">
-                        <div class="house house-blue"></div>
-                        <div class="house house-green"></div>
-                        <div class="house house-red"></div>
-                        <div class="paint-roller"></div>
-                    </div>
-                    <span class="logo-text">Classy HOMES</span>
-                </div>
+                <img src="logo.jpg" alt="Classy HOMES Uganda Logo" class="logo-img">
+                <span class="logo-text">Classy HOMES</span>
+            </div>
                 <div class="footer-links">
                     <div class="footer-section">
                         <h4>Quick Links</h4>

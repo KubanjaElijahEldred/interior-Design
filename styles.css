@@ -751,6 +751,137 @@ img {
     display: none !important;
 }
 
+/* Director Section */
+.director {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.director-content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.director-image {
+    position: relative;
+}
+
+.director-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    filter: brightness(1.1) contrast(1.05) saturate(1.1);
+    transition: all var(--transition-base);
+    border-radius: var(--radius-xl);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.director-image:hover .director-img {
+    transform: scale(1.02);
+    filter: brightness(1.15) contrast(1.1) saturate(1.2);
+}
+
+.director-info h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-primary) !important;
+    margin-bottom: 0.5rem;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.director-info h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--primary-accent) !important;
+    margin-bottom: 1.5rem;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.director-info p {
+    color: var(--text-secondary) !important;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.director-achievements {
+    display: flex;
+    gap: 2rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.achievement {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    background: white;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: all var(--transition-base);
+}
+
+.achievement:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.achievement i {
+    color: var(--primary-accent) !important;
+    font-size: 1.25rem;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.achievement span {
+    color: var(--text-primary) !important;
+    font-weight: 600;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.director-contact {
+    background: white;
+    padding: 1.5rem;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    margin-top: 2rem;
+}
+
+.director-contact h5 {
+    color: var(--text-primary) !important;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.director-contact p {
+    color: var(--text-secondary) !important;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.director-contact i {
+    color: var(--primary-accent) !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
 .about-text h3 {
     font-size: 2rem;
     font-weight: 700;
